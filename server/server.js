@@ -14,11 +14,22 @@ const PORT = process.env.PORT || 3000;
 
 // --- 정적 파일 제공 설정 ---
 // 프로젝트 루트에서 필요한 폴더를 각각 정적 제공
+// ─── 정적 파일 제공 설정 ────────────────────────────────────────────
+// 1) views 폴더를 웹 루트로 매핑해서 /solo.html, /multi.html 등이 동작하도록
+app.use(express.static(path.join(__dirname, '..', 'views')));
+// 2) 나머지 정적 자산(css, scripts, icons, data 등)
+app.use(express.static(path.join(__dirname, '..', 'css')));
+app.use(express.static(path.join(__dirname, '..', 'scripts')));
+app.use(express.static(path.join(__dirname, '..', 'icons')));
+app.use(express.static(path.join(__dirname, '..', 'position_icons')));
+app.use(express.static(path.join(__dirname, '..', 'splash')));
+app.use(express.static(path.join(__dirname, '..', 'audio')));
+app.use(express.static(path.join(__dirname, '..', 'data')));
 app.use(express.static(path.join(__dirname, '..')));
 
 // 루트 경로 요청 시 index.html 전송
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'views', 'room.html'));
+  res.sendFile(path.join(__dirname, '..', 'views', 'solo.html'));
 });
 
 // ─── 대기실 상태 저장 ────────────────────────────────────────────
