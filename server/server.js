@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, '..', 'data')));
 
 // 루트 경로 요청 시 index.html 전송
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'views', 'room.html'));
 });
 
 // ─── 대기실 상태 저장 ────────────────────────────────────────────
