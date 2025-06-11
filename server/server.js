@@ -14,14 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 // --- 정적 파일 제공 설정 ---
 // 프로젝트 루트에서 필요한 폴더를 각각 정적 제공
-app.use(express.static(path.join(__dirname, '..', 'views')));
-app.use(express.static(path.join(__dirname, '..', 'css')));
-app.use(express.static(path.join(__dirname, '..', 'scripts')));
-app.use(express.static(path.join(__dirname, '..', 'icons')));
-app.use(express.static(path.join(__dirname, '..', 'position_icons')));
-app.use(express.static(path.join(__dirname, '..', 'splash')));
-app.use(express.static(path.join(__dirname, '..', 'audio')));
-app.use(express.static(path.join(__dirname, '..', 'data')));
+app.use(express.static(path.join(__dirname, '..')));
 
 // 루트 경로 요청 시 index.html 전송
 app.get('/', (req, res) => {
