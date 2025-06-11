@@ -1,0 +1,85 @@
+<!-- views/room.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>롤 피어리스 밴픽 시뮬레이터 – Room</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body, html { margin:0; padding:0; height:100%; background:#1e1e1e; color:#f0f0f0; font-family:"Segoe UI",sans-serif; }
+    .container { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; }
+    .controls { display:flex; gap:32px; margin-bottom:24px; }
+    .group { display:flex; flex-direction:column; align-items:center; }
+    .group label { margin-bottom:8px; font-size:1rem; }
+    .group .options { display:flex; gap:12px; }
+    .options input { display:none; }
+    .options label {
+      padding:8px 16px;
+      border:2px solid #444;
+      border-radius:4px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .options input:checked + label {
+      background:#0066ff;
+      border-color:#0066ff;
+      color:#fff;
+    }
+    #start-btn {
+      margin-top:32px;
+      padding:12px 36px;
+      font-size:1.2rem;
+      background:#0066ff;
+      border:none;
+      border-radius:4px;
+      color:#fff;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>롤 피어리스 밴픽 시뮬레이터</h1>
+
+    <div class="controls">
+      <!-- 모드 선택 -->
+      <div class="group">
+        <label>밴픽 모드</label>
+        <div class="options">
+          <input type="radio" id="mode-solo" name="mode" value="solo" checked>
+          <label for="mode-solo">SOLO</label>
+          <input type="radio" id="mode-multi" name="mode" value="multi">
+          <label for="mode-multi">MULTI</label>
+        </div>
+      </div>
+
+      <!-- 시간제한 선택 -->
+      <div class="group">
+        <label>시간 무제한</label>
+        <div class="options">
+          <input type="radio" id="time-on" name="timer" value="unlimited" checked>
+          <label for="time-on">ON</label>
+          <input type="radio" id="time-off" name="timer" value="60s">
+          <label for="time-off">OFF (60초)</label>
+        </div>
+      </div>
+    </div>
+
+    <button id="start-btn">시작하기</button>
+  </div>
+
+  <script type="module">
+  document.getElementById('start-btn').addEventListener('click', () => {
+    const mode  = document.querySelector('input[name=mode]:checked').value;
+    const timer = document.querySelector('input[name=timer]:checked').value;
+    // SOLO 모드면 바로 solo.html, MULTI 모드면 lobby.html
+    if (mode === 'solo') {
+      location.href = `solo.html?timer=${timer}`;
+    } else {
+      location.href = `lobby.html?mode=${mode}&timer=${timer}`;
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "banpick-tool",
+  "version": "1.0.0",
+  "description": "롤 피어리스 밴픽 시뮬레이터",
+  "author": "Your Name",
+  "main": "main.js",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "build": {
+    "appId": "com.yourname.banpick",
+    "productName": "BanPickTool",
+    "icon": "buildResources/icon.ico",
+    "files": [
+      "main.js",
+      "preload.js",
+      "views/**/*",
+      "css/**/*",
+      "scripts/**/*",
+      "data/**/*",
+      "icons/**/*",
+      "position_icons/**/*",
+      "splash/**/*",
+      "audio/**/*",
+      "server/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "sign": false
+    }
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nanoid": "^5.1.5",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

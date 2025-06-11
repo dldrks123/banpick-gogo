@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>롤 피어리스 밴픽 시뮬레이터 – 로비</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      background:#1e1e1e;
+      color:#f0f0f0;
+      font-family:"Segoe UI",sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .header {
+      width:100%;
+      height:80px;
+      background:#111;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:2rem;       /* 크기 키움 */
+      font-weight:bold;
+      border-bottom:2px solid #333;
+    }
+    .link-panel {
+      width:100%;
+      max-width:600px;
+      padding:24px;
+      box-sizing:border-box;
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+      margin-top:32px;
+    }
+    .line {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+    .line label {
+      flex:none;
+      width:100px;
+      text-align:right;
+      margin-right:8px;
+    }
+    .line input {
+      flex:1;
+      padding:6px 8px;
+      background:#2a2a2a;
+      border:1px solid #444;
+      border-radius:4px;
+      color:#fff;
+    }
+    .line button {
+      padding:6px 12px;
+      border:none;
+      border-radius:4px;
+      color:#fff;
+      cursor:pointer;
+    }
+    /* 버튼 색상 변경 */
+    #copy-blue { background:#0066ff; }
+    #copy-red  { background:#cc0000; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    롤 피어리스 밴픽 시뮬레이터 – 로비
+  </div>
+
+  <div class="link-panel">
+    <div class="line">
+      <label for="blue-link">블루팀 참가</label>
+      <input id="blue-link" readonly />
+      <button id="copy-blue">복사</button>
+    </div>
+    <div class="line">
+      <label for="red-link">레드팀 참가</label>
+      <input id="red-link" readonly />
+      <button id="copy-red">복사</button>
+    </div>
+  </div>
+
+  <script type="module" src="../scripts/lobby.js"></script>
+</body>
+</html>

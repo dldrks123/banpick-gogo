@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "1",
+    "key_en": "Garen",
+    "key_kr": "가렌",
+    "icon": "Garen.png",
+    "splash": "Garen.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "2",
+    "key_en": "Galio",
+    "key_kr": "갈리오",
+    "icon": "Galio.png",
+    "splash": "Galio.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "3",
+    "key_en": "Gangplank",
+    "key_kr": "갱플랭크",
+    "icon": "Gangplank.png",
+    "splash": "Gangplank.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "4",
+    "key_en": "Gragas",
+    "key_kr": "그라가스",
+    "icon": "Gragas.png",
+    "splash": "Gragas.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "5",
+    "key_en": "Graves",
+    "key_kr": "그레이브즈",
+    "icon": "Graves.png",
+    "splash": "Graves.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "6",
+    "key_en": "Gwen",
+    "key_kr": "그웬",
+    "icon": "Gwen.png",
+    "splash": "Gwen.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "7",
+    "key_en": "Gnar",
+    "key_kr": "나르",
+    "icon": "Gnar.png",
+    "splash": "Gnar.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "8",
+    "key_en": "Nami",
+    "key_kr": "나미",
+    "icon": "Nami.png",
+    "splash": "Nami.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "9",
+    "key_en": "Nasus",
+    "key_kr": "나서스",
+    "icon": "Nasus.png",
+    "splash": "Nasus.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "10",
+    "key_en": "Nautilus",
+    "key_kr": "노틸러스",
+    "icon": "Nautilus.png",
+    "splash": "Nautilus.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "11",
+    "key_en": "Nocturne",
+    "key_kr": "녹턴",
+    "icon": "Nocturne.png",
+    "splash": "Nocturne.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "12",
+    "key_en": "Nunu",
+    "key_kr": "누누와 윌럼프",
+    "icon": "Nunu.png",
+    "splash": "Nunu.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "13",
+    "key_en": "Nidalee",
+    "key_kr": "니달리",
+    "icon": "Nidalee.png",
+    "splash": "Nidalee.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "14",
+    "key_en": "Neeko",
+    "key_kr": "니코",
+    "icon": "Neeko.png",
+    "splash": "Neeko.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "15",
+    "key_en": "Nilah",
+    "key_kr": "닐라",
+    "icon": "Nilah.png",
+    "splash": "Nilah.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "16",
+    "key_en": "Darius",
+    "key_kr": "다리우스",
+    "icon": "Darius.png",
+    "splash": "Darius.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "17",
+    "key_en": "Diana",
+    "key_kr": "다이애나",
+    "icon": "Diana.png",
+    "splash": "Diana.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "18",
+    "key_en": "Draven",
+    "key_kr": "드레이븐",
+    "icon": "Draven.png",
+    "splash": "Draven.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "19",
+    "key_en": "Ryze",
+    "key_kr": "라이즈",
+    "icon": "Ryze.png",
+    "splash": "Ryze.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "20",
+    "key_en": "Rakan",
+    "key_kr": "라칸",
+    "icon": "Rakan.png",
+    "splash": "Rakan.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "21",
+    "key_en": "Rammus",
+    "key_kr": "람머스",
+    "icon": "Rammus.png",
+    "splash": "Rammus.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "22",
+    "key_en": "Lux",
+    "key_kr": "럭스",
+    "icon": "Lux.png",
+    "splash": "Lux.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "23",
+    "key_en": "Rumble",
+    "key_kr": "럼블",
+    "icon": "Rumble.png",
+    "splash": "Rumble.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "24",
+    "key_en": "Renata",
+    "key_kr": "레나타 글라스크",
+    "icon": "Renata.png",
+    "splash": "Renata.jpg",
+    "pos": "suppot"
+  },
+  {
+    "id": "25",
+    "key_en": "Renekton",
+    "key_kr": "레넥톤",
+    "icon": "Renekton.png",
+    "splash": "Renekton.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "26",
+    "key_en": "Leona",
+    "key_kr": "레오나",
+    "icon": "Leona.png",
+    "splash": "Leona.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "27",
+    "key_en": "RekSai",
+    "key_kr": "렉사이",
+    "icon": "RekSai.png",
+    "splash": "RekSai.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "28",
+    "key_en": "Rell",
+    "key_kr": "렐",
+    "icon": "Rell.png",
+    "splash": "Rell.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "29",
+    "key_en": "Rengar",
+    "key_kr": "렝가",
+    "icon": "Rengar.png",
+    "splash": "Rengar.jpg",
+    "pos": "jungle, top"
+  },
+  {
+    "id": "30",
+    "key_en": "Lucian",
+    "key_kr": "루시안",
+    "icon": "Lucian.png",
+    "splash": "Lucian.jpg",
+    "pos": "adcarry, mid"
+  },
+  {
+    "id": "31",
+    "key_en": "Lulu",
+    "key_kr": "룰루",
+    "icon": "Lulu.png",
+    "splash": "Lulu.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "32",
+    "key_en": "Leblanc",
+    "key_kr": "르블랑",
+    "icon": "Leblanc.png",
+    "splash": "Leblanc.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "33",
+    "key_en": "LeeSin",
+    "key_kr": "리 신",
+    "icon": "LeeSin.png",
+    "splash": "LeeSin.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "34",
+    "key_en": "Riven",
+    "key_kr": "리븐",
+    "icon": "Riven.png",
+    "splash": "Riven.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "35",
+    "key_en": "Lissandra",
+    "key_kr": "리산드라",
+    "icon": "Lissandra.png",
+    "splash": "Lissandra.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "36",
+    "key_en": "Lillia",
+    "key_kr": "릴리아",
+    "icon": "Lillia.png",
+    "splash": "Lillia.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "37",
+    "key_en": "MasterYi",
+    "key_kr": "마스터 이",
+    "icon": "MasterYi.png",
+    "splash": "MasterYi.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "38",
+    "key_en": "Maokai",
+    "key_kr": "마오카이",
+    "icon": "Maokai.png",
+    "splash": "Maokai.jpg",
+    "pos": "top, jungle, support"
+  },
+  {
+    "id": "39",
+    "key_en": "Malzahar",
+    "key_kr": "말자하",
+    "icon": "Malzahar.png",
+    "splash": "Malzahar.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "40",
+    "key_en": "Malphite",
+    "key_kr": "말파이트",
+    "icon": "Malphite.png",
+    "splash": "Malphite.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "41",
+    "key_en": "Mordekaiser",
+    "key_kr": "모데카이저",
+    "icon": "Mordekaiser.png",
+    "splash": "Mordekaiser.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "42",
+    "key_en": "Morgana",
+    "key_kr": "모르가나",
+    "icon": "Morgana.png",
+    "splash": "Morgana.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "43",
+    "key_en": "DrMundo",
+    "key_kr": "문도 박사",
+    "icon": "DrMundo.png",
+    "splash": "DrMundo.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "44",
+    "key_en": "MissFortune",
+    "key_kr": "미스 포츈",
+    "icon": "MissFortune.png",
+    "splash": "MissFortune.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "45",
+    "key_en": "Milio",
+    "key_kr": "밀리오",
+    "icon": "Milio.png",
+    "splash": "Milio.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "46",
+    "key_en": "Bard",
+    "key_kr": "바드",
+    "icon": "Bard.png",
+    "splash": "Bard.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "47",
+    "key_en": "Varus",
+    "key_kr": "바루스",
+    "icon": "Varus.png",
+    "splash": "Varus.jpg",
+    "pos": "adcarry, top"
+  },
+  {
+    "id": "48",
+    "key_en": "Vi",
+    "key_kr": "바이",
+    "icon": "Vi.png",
+    "splash": "Vi.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "49",
+    "key_en": "Veigar",
+    "key_kr": "베이가",
+    "icon": "Veigar.png",
+    "splash": "Veigar.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "50",
+    "key_en": "Vayne",
+    "key_kr": "베인",
+    "icon": "Vayne.png",
+    "splash": "Vayne.jpg",
+    "pos": "adcarry, top"
+  },
+  {
+    "id": "51",
+    "key_en": "Vex",
+    "key_kr": "벡스",
+    "icon": "Vex.png",
+    "splash": "Vex.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "52",
+    "key_en": "Belveth",
+    "key_kr": "벨베스",
+    "icon": "Belveth.png",
+    "splash": "Belveth.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "53",
+    "key_en": "Velkoz",
+    "key_kr": "벨코즈",
+    "icon": "Velkoz.png",
+    "splash": "Velkoz.jpg",
+    "pos": "support, mid"
+  },
+  {
+    "id": "54",
+    "key_en": "Volibear",
+    "key_kr": "볼리베어",
+    "icon": "Volibear.png",
+    "splash": "Volibear.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "55",
+    "key_en": "Braum",
+    "key_kr": "브라움",
+    "icon": "Braum.png",
+    "splash": "Braum.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "56",
+    "key_en": "Brand",
+    "key_kr": "브랜드",
+    "icon": "Brand.png",
+    "splash": "Brand.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "57",
+    "key_en": "Vladimir",
+    "key_kr": "블라디미르",
+    "icon": "Vladimir.png",
+    "splash": "Vladimir.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "58",
+    "key_en": "Blitzcrank",
+    "key_kr": "블리츠크랭크",
+    "icon": "Blitzcrank.png",
+    "splash": "Blitzcrank.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "59",
+    "key_en": "Viego",
+    "key_kr": "비에고",
+    "icon": "Viego.png",
+    "splash": "Viego.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "60",
+    "key_en": "Viktor",
+    "key_kr": "빅토르",
+    "icon": "Viktor.png",
+    "splash": "Viktor.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "61",
+    "key_en": "Poppy",
+    "key_kr": "뽀삐",
+    "icon": "Poppy.png",
+    "splash": "Poppy.jpg",
+    "pos": "top, support, jungle"
+  },
+  {
+    "id": "62",
+    "key_en": "Samira",
+    "key_kr": "사미라",
+    "icon": "Samira.png",
+    "splash": "Samira.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "63",
+    "key_en": "Sion",
+    "key_kr": "사이온",
+    "icon": "Sion.png",
+    "splash": "Sion.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "64",
+    "key_en": "Sylas",
+    "key_kr": "사일러스",
+    "icon": "Sylas.png",
+    "splash": "Sylas.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "65",
+    "key_en": "Shaco",
+    "key_kr": "샤코",
+    "icon": "Shaco.png",
+    "splash": "Shaco.jpg",
+    "pos": "jungle, support"
+  },
+  {
+    "id": "66",
+    "key_en": "Senna",
+    "key_kr": "세나",
+    "icon": "Senna.png",
+    "splash": "Senna.jpg",
+    "pos": "adcarry, support"
+  },
+  {
+    "id": "67",
+    "key_en": "Seraphine",
+    "key_kr": "세라핀",
+    "icon": "Seraphine.png",
+    "splash": "Seraphine.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "68",
+    "key_en": "Sejuani",
+    "key_kr": "세주아니",
+    "icon": "Sejuani.png",
+    "splash": "Sejuani.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "69",
+    "key_en": "Sett",
+    "key_kr": "세트",
+    "icon": "Sett.png",
+    "splash": "Sett.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "70",
+    "key_en": "Sona",
+    "key_kr": "소나",
+    "icon": "Sona.png",
+    "splash": "Sona.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "71",
+    "key_en": "Soraka",
+    "key_kr": "소라카",
+    "icon": "Soraka.png",
+    "splash": "Soraka.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "72",
+    "key_en": "Shen",
+    "key_kr": "쉔",
+    "icon": "Shen.png",
+    "splash": "Shen.jpg",
+    "pos": "top, support"
+  },
+  {
+    "id": "73",
+    "key_en": "Shyvana",
+    "key_kr": "쉬바나",
+    "icon": "Shyvana.png",
+    "splash": "Shyvana.jpg",
+    "pos": "jungle, top"
+  },
+  {
+    "id": "74",
+    "key_en": "Swain",
+    "key_kr": "스웨인",
+    "icon": "Swain.png",
+    "splash": "Swain.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "75",
+    "key_en": "Skarner",
+    "key_kr": "스카너",
+    "icon": "Skarner.png",
+    "splash": "Skarner.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "76",
+    "key_en": "Sivir",
+    "key_kr": "시비르",
+    "icon": "Sivir.png",
+    "splash": "Sivir.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "77",
+    "key_en": "XinZhao",
+    "key_kr": "신 짜오",
+    "icon": "XinZhao.png",
+    "splash": "XinZhao.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "78",
+    "key_en": "Syndra",
+    "key_kr": "신드라",
+    "icon": "Syndra.png",
+    "splash": "Syndra.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "79",
+    "key_en": "Singed",
+    "key_kr": "신지드",
+    "icon": "Singed.png",
+    "splash": "Singed.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "80",
+    "key_en": "Thresh",
+    "key_kr": "쓰레쉬",
+    "icon": "Thresh.png",
+    "splash": "Thresh.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "81",
+    "key_en": "Ahri",
+    "key_kr": "아리",
+    "icon": "Ahri.png",
+    "splash": "Ahri.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "82",
+    "key_en": "Amumu",
+    "key_kr": "아무무",
+    "icon": "Amumu.png",
+    "splash": "Amumu.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "83",
+    "key_en": "AurelionSol",
+    "key_kr": "아우렐리온 솔",
+    "icon": "AurelionSol.png",
+    "splash": "AurelionSol.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "84",
+    "key_en": "Ivern",
+    "key_kr": "아이번",
+    "icon": "Ivern.png",
+    "splash": "Ivern.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "85",
+    "key_en": "Azir",
+    "key_kr": "아지르",
+    "icon": "Azir.png",
+    "splash": "Azir.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "86",
+    "key_en": "Akali",
+    "key_kr": "아칼리",
+    "icon": "Akali.png",
+    "splash": "Akali.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "87",
+    "key_en": "Akshan",
+    "key_kr": "아크샨",
+    "icon": "Akshan.png",
+    "splash": "Akshan.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "88",
+    "key_en": "Aatrox",
+    "key_kr": "아트록스",
+    "icon": "Aatrox.png",
+    "splash": "Aatrox.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "89",
+    "key_en": "Aphelios",
+    "key_kr": "아펠리오스",
+    "icon": "Aphelios.png",
+    "splash": "Aphelios.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "90",
+    "key_en": "Alistar",
+    "key_kr": "알리스타",
+    "icon": "Alistar.png",
+    "splash": "Alistar.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "91",
+    "key_en": "Annie",
+    "key_kr": "애니",
+    "icon": "Annie.png",
+    "splash": "Annie.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "92",
+    "key_en": "Anivia",
+    "key_kr": "애니비아",
+    "icon": "Anivia.png",
+    "splash": "Anivia.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "93",
+    "key_en": "Ashe",
+    "key_kr": "애쉬",
+    "icon": "Ashe.png",
+    "splash": "Ashe.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "94",
+    "key_en": "Yasuo",
+    "key_kr": "야스오",
+    "icon": "Yasuo.png",
+    "splash": "Yasuo.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "95",
+    "key_en": "Ekko",
+    "key_kr": "에코",
+    "icon": "Ekko.png",
+    "splash": "Ekko.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "96",
+    "key_en": "Elise",
+    "key_kr": "엘리스",
+    "icon": "Elise.png",
+    "splash": "Elise.jpg",
+    "pos": "jungle, support"
+  },
+  {
+    "id": "97",
+    "key_en": "MonkeyKing",
+    "key_kr": "오공",
+    "icon": "MonkeyKing.png",
+    "splash": "MonkeyKing.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "98",
+    "key_en": "Ornn",
+    "key_kr": "오른",
+    "icon": "Ornn.png",
+    "splash": "Ornn.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "99",
+    "key_en": "Orianna",
+    "key_kr": "오리아나",
+    "icon": "Orianna.png",
+    "splash": "Orianna.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "100",
+    "key_en": "Olaf",
+    "key_kr": "올라프",
+    "icon": "Olaf.png",
+    "splash": "Olaf.jpg",
+    "pos": "jungle, top"
+  },
+  {
+    "id": "101",
+    "key_en": "Yone",
+    "key_kr": "요네",
+    "icon": "Yone.png",
+    "splash": "Yone.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "102",
+    "key_en": "Yorick",
+    "key_kr": "요릭",
+    "icon": "Yorick.png",
+    "splash": "Yorick.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "103",
+    "key_en": "Udyr",
+    "key_kr": "우디르",
+    "icon": "Udyr.png",
+    "splash": "Udyr.jpg",
+    "pos": "jungle, top"
+  },
+  {
+    "id": "104",
+    "key_en": "Urgot",
+    "key_kr": "우르곳",
+    "icon": "Urgot.png",
+    "splash": "Urgot.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "105",
+    "key_en": "Warwick",
+    "key_kr": "워윅",
+    "icon": "Warwick.png",
+    "splash": "Warwick.jpg",
+    "pos": "jungle, top"
+  },
+  {
+    "id": "106",
+    "key_en": "Yuumi",
+    "key_kr": "유미",
+    "icon": "Yuumi.png",
+    "splash": "Yuumi.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "107",
+    "key_en": "Irelia",
+    "key_kr": "이렐리아",
+    "icon": "Irelia.png",
+    "splash": "Irelia.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "108",
+    "key_en": "Evelynn",
+    "key_kr": "이블린",
+    "icon": "Evelynn.png",
+    "splash": "Evelynn.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "109",
+    "key_en": "Ezreal",
+    "key_kr": "이즈리얼",
+    "icon": "Ezreal.png",
+    "splash": "Ezreal.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "110",
+    "key_en": "Illaoi",
+    "key_kr": "일라오이",
+    "icon": "Illaoi.png",
+    "splash": "Illaoi.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "111",
+    "key_en": "JarvanIV",
+    "key_kr": "자르반 4세",
+    "icon": "JarvanIV.png",
+    "splash": "JarvanIV.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "112",
+    "key_en": "Xayah",
+    "key_kr": "자야",
+    "icon": "Xayah.png",
+    "splash": "Xayah.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "113",
+    "key_en": "Zyra",
+    "key_kr": "자이라",
+    "icon": "Zyra.png",
+    "splash": "Zyra.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "114",
+    "key_en": "Zac",
+    "key_kr": "자크",
+    "icon": "Zac.png",
+    "splash": "Zac.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "115",
+    "key_en": "Janna",
+    "key_kr": "잔나",
+    "icon": "Janna.png",
+    "splash": "Janna.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "116",
+    "key_en": "Jax",
+    "key_kr": "잭스",
+    "icon": "Jax.png",
+    "splash": "Jax.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "117",
+    "key_en": "Zed",
+    "key_kr": "제드",
+    "icon": "Zed.png",
+    "splash": "Zed.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "118",
+    "key_en": "Xerath",
+    "key_kr": "제라스",
+    "icon": "Xerath.png",
+    "splash": "Xerath.jpg",
+    "pos": "mid, support"
+  },
+  {
+    "id": "119",
+    "key_en": "Zeri",
+    "key_kr": "제리",
+    "icon": "Zeri.png",
+    "splash": "Zeri.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "120",
+    "key_en": "Jayce",
+    "key_kr": "제이스",
+    "icon": "Jayce.png",
+    "splash": "Jayce.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "121",
+    "key_en": "Zoe",
+    "key_kr": "조이",
+    "icon": "Zoe.png",
+    "splash": "Zoe.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "122",
+    "key_en": "Ziggs",
+    "key_kr": "직스",
+    "icon": "Ziggs.png",
+    "splash": "Ziggs.jpg",
+    "pos": "mid, adcarry"
+  },
+  {
+    "id": "123",
+    "key_en": "Jhin",
+    "key_kr": "진",
+    "icon": "Jhin.png",
+    "splash": "Jhin.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "124",
+    "key_en": "Zilean",
+    "key_kr": "질리언",
+    "icon": "Zilean.png",
+    "splash": "Zilean.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "125",
+    "key_en": "Jinx",
+    "key_kr": "징크스",
+    "icon": "Jinx.png",
+    "splash": "Jinx.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "126",
+    "key_en": "Chogath",
+    "key_kr": "초가스",
+    "icon": "Chogath.png",
+    "splash": "Chogath.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "127",
+    "key_en": "Karma",
+    "key_kr": "카르마",
+    "icon": "Karma.png",
+    "splash": "Karma.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "128",
+    "key_en": "Camille",
+    "key_kr": "카밀",
+    "icon": "Camille.png",
+    "splash": "Camille.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "129",
+    "key_en": "Kassadin",
+    "key_kr": "카사딘",
+    "icon": "Kassadin.png",
+    "splash": "Kassadin.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "130",
+    "key_en": "Karthus",
+    "key_kr": "카서스",
+    "icon": "Karthus.png",
+    "splash": "Karthus.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "131",
+    "key_en": "Cassiopeia",
+    "key_kr": "카시오페아",
+    "icon": "Cassiopeia.png",
+    "splash": "Cassiopeia.jpg",
+    "pos": "mid, top"
+  },
+  {
+    "id": "132",
+    "key_en": "Kaisa",
+    "key_kr": "카이사",
+    "icon": "Kaisa.png",
+    "splash": "Kaisa.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "133",
+    "key_en": "Khazix",
+    "key_kr": "카직스",
+    "icon": "Khazix.png",
+    "splash": "Khazix.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "134",
+    "key_en": "Katarina",
+    "key_kr": "카타리나",
+    "icon": "Katarina.png",
+    "splash": "Katarina.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "135",
+    "key_en": "Kalista",
+    "key_kr": "칼리스타",
+    "icon": "Kalista.png",
+    "splash": "Kalista.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "136",
+    "key_en": "Kennen",
+    "key_kr": "케넨",
+    "icon": "Kennen.png",
+    "splash": "Kennen.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "137",
+    "key_en": "Caitlyn",
+    "key_kr": "케이틀린",
+    "icon": "Caitlyn.png",
+    "splash": "Caitlyn.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "138",
+    "key_en": "Kayn",
+    "key_kr": "케인",
+    "icon": "Kayn.png",
+    "splash": "Kayn.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "139",
+    "key_en": "Kayle",
+    "key_kr": "케일",
+    "icon": "Kayle.png",
+    "splash": "Kayle.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "140",
+    "key_en": "KogMaw",
+    "key_kr": "코그모",
+    "icon": "KogMaw.png",
+    "splash": "KogMaw.jpg",
+    "pos": "adcarry"
+  },
+  {
+    "id": "141",
+    "key_en": "Corki",
+    "key_kr": "코르키",
+    "icon": "Corki.png",
+    "splash": "Corki.jpg",
+    "pos": "mid, adcarry"
+  },
+  {
+    "id": "142",
+    "key_en": "Quinn",
+    "key_kr": "퀸",
+    "icon": "Quinn.png",
+    "splash": "Quinn.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "143",
+    "key_en": "KSante",
+    "key_kr": "크산테",
+    "icon": "KSante.png",
+    "splash": "KSante.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "144",
+    "key_en": "Kled",
+    "key_kr": "클레드",
+    "icon": "Kled.png",
+    "splash": "Kled.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "145",
+    "key_en": "Qiyana",
+    "key_kr": "키아나",
+    "icon": "Qiyana.png",
+    "splash": "Qiyana.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "146",
+    "key_en": "Kindred",
+    "key_kr": "킨드레드",
+    "icon": "Kindred.png",
+    "splash": "Kindred.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "147",
+    "key_en": "Taric",
+    "key_kr": "타릭",
+    "icon": "Taric.png",
+    "splash": "Taric.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "148",
+    "key_en": "Talon",
+    "key_kr": "탈론",
+    "icon": "Talon.png",
+    "splash": "Talon.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "149",
+    "key_en": "Taliyah",
+    "key_kr": "탈리야",
+    "icon": "Taliyah.png",
+    "splash": "Taliyah.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "150",
+    "key_en": "TahmKench",
+    "key_kr": "탐 켄치",
+    "icon": "TahmKench.png",
+    "splash": "TahmKench.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "151",
+    "key_en": "Trundle",
+    "key_kr": "트런들",
+    "icon": "Trundle.png",
+    "splash": "Trundle.jpg",
+    "pos": "top, jungle"
+  },
+  {
+    "id": "152",
+    "key_en": "Tristana",
+    "key_kr": "트리스타나",
+    "icon": "Tristana.png",
+    "splash": "Tristana.jpg",
+    "pos": "adcarry, mid"
+  },
+  {
+    "id": "153",
+    "key_en": "Tryndamere",
+    "key_kr": "트린다미어",
+    "icon": "Tryndamere.png",
+    "splash": "Tryndamere.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "154",
+    "key_en": "TwistedFate",
+    "key_kr": "트위스티드 페이트",
+    "icon": "TwistedFate.png",
+    "splash": "TwistedFate.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "155",
+    "key_en": "Twitch",
+    "key_kr": "트위치",
+    "icon": "Twitch.png",
+    "splash": "Twitch.jpg",
+    "pos": "adcarry, support"
+  },
+  {
+    "id": "156",
+    "key_en": "Teemo",
+    "key_kr": "티모",
+    "icon": "Teemo.png",
+    "splash": "Teemo.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "157",
+    "key_en": "Pyke",
+    "key_kr": "파이크",
+    "icon": "Pyke.png",
+    "splash": "Pyke.jpg",
+    "pos": "support"
+  },
+  {
+    "id": "158",
+    "key_en": "Pantheon",
+    "key_kr": "판테온",
+    "icon": "Pantheon.png",
+    "splash": "Pantheon.jpg",
+    "pos": "top, mid, support, jungle"
+  },
+  {
+    "id": "159",
+    "key_en": "Fiddlesticks",
+    "key_kr": "피들스틱",
+    "icon": "Fiddlesticks.png",
+    "splash": "Fiddlesticks.jpg",
+    "pos": "jungle, support"
+  },
+  {
+    "id": "160",
+    "key_en": "Fiora",
+    "key_kr": "피오라",
+    "icon": "Fiora.png",
+    "splash": "Fiora.jpg",
+    "pos": "top"
+  },
+  {
+    "id": "161",
+    "key_en": "Fizz",
+    "key_kr": "피즈",
+    "icon": "Fizz.png",
+    "splash": "Fizz.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "162",
+    "key_en": "Heimerdinger",
+    "key_kr": "하이머딩거",
+    "icon": "Heimerdinger.png",
+    "splash": "Heimerdinger.jpg",
+    "pos": "mid, top, support"
+  },
+  {
+    "id": "163",
+    "key_en": "Hecarim",
+    "key_kr": "헤카림",
+    "icon": "Hecarim.png",
+    "splash": "Hecarim.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "164",
+    "key_en": "Naffiri",
+    "key_kr": "나피리",
+    "icon": "Naffiri.png",
+    "splash": "Naffiri.jpg",
+    "pos": "mid, jungle"
+  },
+  {
+    "id": "165",
+    "key_en": "Briar",
+    "key_kr": "브라이어",
+    "icon": "Briar.png",
+    "splash": "Briar.jpg",
+    "pos": "jungle"
+  },
+  {
+    "id": "166",
+    "key_en": "Hwei",
+    "key_kr": "흐웨이",
+    "icon": "Hwei.png",
+    "splash": "Hwei.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "167",
+    "key_en": "Smolder",
+    "key_kr": "스몰더",
+    "icon": "Smolder.png",
+    "splash": "Smolder.jpg",
+    "pos": "adcarry, top"
+  },
+  {
+    "id": "168",
+    "key_en": "Aurora",
+    "key_kr": "오로라",
+    "icon": "Aurora.png",
+    "splash": "Aurora.jpg",
+    "pos": "mid"
+  },
+  {
+    "id": "169",
+    "key_en": "Ambessa",
+    "key_kr": "암베사",
+    "icon": "Ambessa.png",
+    "splash": "Ambessa.jpg",
+    "pos": "top, mid"
+  },
+  {
+    "id": "170",
+    "key_en": "Mel",
+    "key_kr": "멜",
+    "icon": "Mel.png",
+    "splash": "Mel.jpg",
+    "pos": "mid, support"
+  }
+]

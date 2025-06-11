@@ -1,0 +1,121 @@
+<!-- views/lobby2.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>롤 피어리스 밴픽 시뮬레이터 – 대기실</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body {
+      margin:0; padding:0; background:#1e1e1e; color:#f0f0f0;
+      font-family:"Segoe UI",sans-serif;
+      display:flex; flex-direction:column; align-items:center;
+    }
+    h1 {
+      margin:24px 0 16px;
+      font-size:2rem;
+    }
+    .nick-area {
+      display:flex; gap:8px; margin-bottom:24px;
+    }
+    .nick-area input {
+      padding:8px 12px; font-size:1rem;
+      border:1px solid #444; border-radius:4px;
+      background:#2a2a2a; color:#fff;
+      width:280px;
+    }
+    .nick-area button {
+      padding:8px 16px; font-size:1rem;
+      border:none; border-radius:4px; background:#0066ff;
+      color:#fff; cursor:pointer;
+    }
+    .controls {
+      display:flex; flex-direction:column; gap:12px; align-items:center;
+      margin-bottom:32px;
+    }
+    .controls button {
+      padding:10px 20px; font-size:1rem;
+      border:none; border-radius:4px;
+      cursor:pointer;
+      width:300px;
+    }
+    #btn-ready { background:#28a745; color:#fff; }
+    #btn-dev-start { background:#ffa500; color:#000; }
+    .count {
+      font-size:1rem;
+    }
+    .slots-container {
+      display:flex; gap:60px; margin-top:32px;
+    }
+    .team-slots {
+      display:flex; flex-direction:column; align-items:center;
+      gap:12px;
+    }
+    .team-slots .title {
+      font-size:1.3rem; font-weight:bold;
+    }
+    .team-slots#blue-team .title { color:#4dabff; }
+    .team-slots#red-team  .title { color:#ff6b6b; }
+
+    .slot-grid {
+      display:grid;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: 1fr;
+      gap:8px;
+    }
+    .slot-box {
+      width:120px; height:50px;
+      background:#2a2a2a; border:1px solid #444;
+      border-radius:4px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1rem; position:relative;
+    }
+    .slot-box.ready::after {
+      content:"READY";
+      position:absolute; top:4px; right:6px;
+      font-size:0.75rem; color:#ffa500;
+    }
+  </style>
+</head>
+<body>
+  <h1>대기실</h1>
+
+  <div class="nick-area">
+    <input id="nick-input" placeholder="닉네임을 입력하세요" />
+    <button id="nick-ok">확인</button>
+  </div>
+
+  <div class="controls">
+    <button id="btn-ready">준비완료</button>
+    <div class="count">준비된 인원: <span id="ready-count">0/10</span></div>
+    <button id="btn-dev-start">개발자용 시작</button>
+  </div>
+
+  <div class="slots-container">
+    <div class="team-slots" id="blue-team">
+      <div class="title">블루팀</div>
+      <div class="slot-grid" id="blue-slots">
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+      </div>
+    </div>
+    <div class="team-slots" id="red-team">
+      <div class="title">레드팀</div>
+      <div class="slot-grid" id="red-slots">
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+        <div class="slot-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="../scripts/lobby2.js"></script>
+</body>
+</html>
