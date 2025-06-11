@@ -12,15 +12,28 @@ const io     = new Server(server);
 
 const PORT = process.env.PORT || 3000;
 
-// 정적 파일 전체 서빙
-app.use(express.static(path.join(__dirname, '..')));
+// --- 정적 파일 제공 설정 ---
+// 프로젝트 루트에서 필요한 폴더를 각각 정적 제공
+app.use(express.static(path.join(__dirname, '..', 'views')));
+app.use(express.static(path.join(__dirname, '..', 'css')));
+app.use(express.static(path.join(__dirname, '..', 'scripts')));
+app.use(express.static(path.join(__dirname, '..', 'icons')));
+app.use(express.static(path.join(__dirname, '..', 'position_icons')));
+app.use(express.static(path.join(__dirname, '..', 'splash')));
+app.use(express.static(path.join(__dirname, '..', 'audio')));
+app.use(express.static(path.join(__dirname, '..', 'data')));
+
+// 루트 경로 요청 시 index.html 전송
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
+});
 
 // ─── 대기실 상태 저장 ────────────────────────────────────────────
 const rooms = {};  // { [roomId]: { blue: [...], red: [...] } }
 
 // ─── 밴픽 게임 전역 상태 ─────────────────────────────────────────
 let state = {
-  players: {},           // socket.id → { role, team }
+  players: {},           // socket.id → { role, team, ready }
   phase: 'waiting',      // 'waiting' | 'playing' | 'set-wait'
   timerMode: 'unlimited',
   stageIdx: -1,
@@ -42,13 +55,9 @@ io.on('connection', socket => {
   // ── 대기실 입장 이벤트 ─────────────────────────────────────────
   socket.on('join-room', ({ room, nick, team }) => {
     socket.join(room);
-    if (!rooms[room]) {
-      rooms[room] = { blue: [], red: [] };
-    }
+    if (!rooms[room]) rooms[room] = { blue: [], red: [] };
     const list = rooms[room][team];
-    if (!list.find(p => p.nick === nick)) {
-      list.push({ nick, ready: false });
-    }
+    if (!list.find(p => p.nick === nick)) list.push({ nick, ready: false });
     io.to(room).emit('room-state', rooms[room]);
   });
 
@@ -72,26 +81,22 @@ io.on('connection', socket => {
   // ── 밴픽 게임 이벤트 ───────────────────────────────────────────
   socket.on('join', role => {
     const team = role.split('-')[0];
-    state.players[socket.id] = { role, team };
+    state.players[socket.id] = { role, team, ready: false };
     socket.join(team);
-    // 초기 상태 보내기
     socket.emit('phaseChange', state.phase);
     socket.emit('stageChange', state.stageIdx);
   });
 
   socket.on('setTimerMode', mode => {
-    if (state.phase === 'waiting') {
-      state.timerMode = mode;
-    }
+    if (state.phase === 'waiting') state.timerMode = mode;
   });
 
-  socket.on('toggleReady', ({ role }) => {
+  socket.on('toggleReady', () => {
     const p = state.players[socket.id];
     if (!p) return;
     p.ready = !p.ready;
     io.emit('stateUpdate', state);
 
-    // 자동 시작/진행 (개발 단계: 한 명만 눌러도 진행)
     if (state.phase === 'waiting' && Object.values(state.players).some(x => x.ready)) {
       startGame();
     } else if (state.phase === 'set-wait' && Object.values(state.players).some(x => x.ready)) {
