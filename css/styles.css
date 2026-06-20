@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  background-color: #1e1e1e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+.container {
+  height: calc(100vh / 1.2);
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  transform: scale(1.2);
+  transform-origin: top center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #111;
+  border-bottom: 2px solid #333;
+  padding: 0 10px;
+}
+
+#stage-indicator {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.team-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  height: 100%;
+}
+
+.team-title.blue { background-color: #0066ff; }
+.team-title.red  { background-color: #cc0000; }
+
+.timer {
+  flex: 0 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 4px;
+}
+.timer .time { font-size: 1.5rem; font-weight: bold; }
+.timer .label { font-size: 0.8rem; color: #aaa; margin-top: 2px; }
+
+.set-indicator {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.btn-next-set {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-next-set:hover {
+  background-color: #0050cc;
+}
+
+.fearless-ban-zone {
+  display: flex;
+  width: 100%;
+  background-color: #1b1b1b;
+  border-bottom: 2px solid #333;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.fearless-zone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #333;
+  padding: 0 10px;
+  min-height: 120px;
+}
+.fearless-zone:last-child { border-right: none; }
+
+.fearless-ban-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.fearless-ban-box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  position: relative;
+}
+.fearless-ban-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.fearless-ban-box .ban-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  background-color: rgba(255,255,255,0.6);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.fearless-zone .zone-label {
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100vh - 60px - 90px);
+  margin-top: 20px;
+}
+
+.panel-left, .panel-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  padding: 20px 10px;
+}
+.panel-left { margin-right: 10px; }
+.panel-right { margin-left: 10px; }
+
+.panel-left .panel-title, .panel-right .panel-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.ban-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.ban-row .ban-box {
+  width: 58px;
+  height: 58px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  position: relative;
+}
+.ban-row .ban-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.ban-row .ban-box .ban-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  background-color: rgba(255,255,255,0.6);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* 비활성화된 그리드 위에 흑백 X */
+.champion-item.disabled img {
+  filter: grayscale(100%);
+}
+.champion-item.disabled .grid-ban-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+.champion-item.disabled .grid-ban-overlay::before,
+.champion-item.disabled .grid-ban-overlay::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 140%;
+  background-color: #fff;
+  transform-origin: center;
+}
+.champion-item.disabled .grid-ban-overlay::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.champion-item.disabled .grid-ban-overlay::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.pick-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.pick-box {
+  position: relative;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #333;
+  cursor: pointer;
+}
+.pick-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0.85;
+}
+.pick-box .lane-label {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #eee !important;
+  opacity: 1 !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  z-index: 2;
+}
+.pick-box .picked-label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.panel-center {
+  flex: 0 0 50%;
+  background-color: #151515;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 6px;
+}
+
+.filter-bar button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filter-bar button img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: none;
+}
+.filter-bar button.not-active img {
+  filter: grayscale(100%);
+}
+.filter-bar button.active img {
+  filter: none;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.champion-grid {
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  padding: 10px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 96px;
+  gap: 12px;
+  height: 656px;
+}
+
+.champion-grid .champion-item {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background-color: #2a2a2a;
+}
+
+.champion-grid .champion-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.champion-grid .champion-item .champion-name {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1px 0;
+  border-radius: 2px;
+}
+
+.confirm-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.confirm-button:hover {
+  background-color: #0050cc;
+}
+
+.champion-item.selected {
+  outline: 2px solid #ffa500;
+  outline-offset: 2px;
+}
+
+/* ── 레이아웃 분할 ── */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+.chat-panel {
+  width: 15%;
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+}
+.banpick-panel {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.control-panel {
+  width: 15%;
+  background: #1e1e1e;
+  box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── 채팅창 ── */
+.chat-messages {
+  flex: 1;
+  background: #2a2a2a;
+  border-radius: 4px;
+  padding: 8px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.chat-input {
+  display: flex;
+}
+.chat-input input {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background: #3a3a3a;
+  color: #fff;
+}
+.chat-input button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background: #0066ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ── 채팅 라인 ── */
+.chat-line {
+  margin-bottom: 4px;
+}
+
+/* ── 벤픽 UI 스크롤 숨기기 ── */
+.banpick-panel .container {
+  overflow-y: auto;
+}
+.banpick-panel .container::-webkit-scrollbar {
+  display: none;
+}

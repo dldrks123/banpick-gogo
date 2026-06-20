@@ -1,0 +1,154 @@
+<!-- views/solo.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solo 모드 – Ban/Pick</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- 배경음악 및 효과음 -->
+  <audio id="bgm-player" src="../audio/bgm.mp3" autoplay loop playsinline></audio>
+  <audio id="click-sound" src="../audio/click.mp3" preload="auto"></audio>
+  <audio id="select-sound" src="../audio/select.mp3" preload="auto"></audio>
+
+  <!-- 볼륨 컨트롤 -->
+  <div class="volume-control">
+    <button id="btn-mute">🔇</button>
+    <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="team-title blue">BLUE</div>
+      <div class="timer">
+        <div class="time">0:00</div>
+        <div class="label">BAN / PICK</div>
+      </div>
+      <div class="team-title red">RED</div>
+    </div>
+
+    <div class="set-indicator">
+      현재 Set: <span id="current-set">1</span>
+      <button id="next-set-btn" class="btn-next-set">다음 Set으로</button>
+    </div>
+
+    <div id="stage-indicator"></div>
+
+    <div class="fearless-ban-zone">
+      <!-- 4 세트까지 동일 구조 -->
+      <!-- 1st set -->
+      <div class="fearless-zone">
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="zone-label">1 set pick</div>
+      </div>
+      <!-- 2nd set -->
+      <div class="fearless-zone">
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="zone-label">2 set pick</div>
+      </div>
+      <!-- 3rd set -->
+      <div class="fearless-zone">
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="zone-label">3 set pick</div>
+      </div>
+      <!-- 4th set -->
+      <div class="fearless-zone">
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="fearless-ban-row">
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div><div class="fearless-ban-box"></div>
+          <div class="fearless-ban-box"></div>
+        </div>
+        <div class="zone-label">4 set pick</div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <!-- Blue panel -->
+      <div class="panel-left">
+        <div class="panel-title">블루팀</div>
+        <div class="ban-row" id="blue-ban-row">
+          <div class="ban-box"></div><div class="ban-box"></div>
+          <div class="ban-box"></div><div class="ban-box"></div>
+          <div class="ban-box"></div>
+        </div>
+        <div class="pick-column" id="blue-pick-col">
+          <div class="pick-box"><div class="lane-label">블루 탑</div></div>
+          <div class="pick-box"><div class="lane-label">블루 정글</div></div>
+          <div class="pick-box"><div class="lane-label">블루 미드</div></div>
+          <div class="pick-box"><div class="lane-label">블루 봇</div></div>
+          <div class="pick-box"><div class="lane-label">블루 서폿</div></div>
+        </div>
+      </div>
+      <!-- Center panel -->
+      <div class="panel-center">
+        <div class="search-bar">
+          <div class="filter-bar" id="filter-bar">
+            <button data-role="top"><img src="../position_icons/icon-position-top.png" alt="탑"/></button>
+            <button data-role="jungle"><img src="../position_icons/icon-position-jungle.png" alt="정글"/></button>
+            <button data-role="mid"><img src="../position_icons/icon-position-middle.png" alt="미드"/></button>
+            <button data-role="adc"><img src="../position_icons/icon-position-bottom.png" alt="바텀"/></button>
+            <button data-role="support"><img src="../position_icons/icon-position-utility.png" alt="서폿"/></button>
+          </div>
+          <input type="text" id="search-input" placeholder="챔피언 이름 검색(한글/영문)" />
+        </div>
+        <div class="champion-grid" id="champion-grid"></div>
+        <button id="confirm-btn" class="confirm-button">확정</button>
+      </div>
+      <!-- Red panel -->
+      <div class="panel-right">
+        <div class="panel-title">레드팀</div>
+        <div class="ban-row" id="red-ban-row">
+          <div class="ban-box"></div><div class="ban-box"></div>
+          <div class="ban-box"></div><div class="ban-box"></div>
+          <div class="ban-box"></div>
+        </div>
+        <div class="pick-column" id="red-pick-col">
+          <div class="pick-box"><div class="lane-label">레드 탑</div></div>
+          <div class="pick-box"><div class="lane-label">레드 정글</div></div>
+          <div class="pick-box"><div class="lane-label">레드 미드</div></div>
+          <div class="pick-box"><div class="lane-label">레드 봇</div></div>
+          <div class="pick-box"><div class="lane-label">레드 서폿</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ES 모듈 로드 -->
+  <script type="module" src="../scripts/common.js"></script>
+  <script type="module" src="../scripts/solo.js"></script>
+</body>
+</html>
